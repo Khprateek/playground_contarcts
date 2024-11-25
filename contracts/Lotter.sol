@@ -11,7 +11,7 @@ contract Lotter{
   }
 
   function participate() public payable{
-      require(msg.value==1 ether,"Please pay 1 ether only");
+      require(msg.value==0.000001 ether,"Please pay 0.000001 ether only");
       players.push(payable(msg.sender));
   }
 
